@@ -1,508 +1,237 @@
 <!DOCTYPE HTML>
-
-
-
-<!-- <style>
-  #full {
-    display: none;
-  }
-</style> -->
-
 <html lang="en">
 
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>Haoji Zhang</title>
-
-  <meta name="author" content="Haoji Zhang">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <link rel="icon" type="image/png" href="images/icon.png">
-  <style>
-    /* 这里写你自己的样式 */
-    .black-link,
-    .black-link:visited {
-      color: black;
-      text-decoration: none;
-    }
-
-    .black-link:hover,
-    .black-link:focus,
-    .black-link:active {
-      color: black;
-      text-decoration: underline;
-    }
-
-    #full {
-      display: none;
-    }
-  </style>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Haoji Zhang</title>
+    <meta name="author" content="Haoji Zhang">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="icon" type="image/png" href="images/icon.png">
+    <script src="publications.js"></script>
+    <script src="main.js"></script>
 </head>
 
+<!-- 固定导航栏 -->
+<nav class="top-navbar">
+    <div class="container">
+        <div class="navbar-left">
+            <span class="navbar-title">Haoji Zhang</span>
+        </div>
+        <div class="navbar-right">
+            <a href="#home">Home</a>
+            <a href="#news">News</a>
+            <a href="#publications-anchor">Publications</a>
+            <a href="#honors">Honors</a>
+        </div>
+    </div>
+</nav>
 
 <body>
-  <table
-    style="width:100%;max-width:750px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <tbody>
-      <tr style="padding:0px">
-        <td style="padding:0px">
-          <!-- self introduction -->
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr style="padding:0px">
-                <td style="padding:2.5%;width:60%;vertical-align:middle">
-                  <p style="text-align:center">
-                    <name>Haoji Zhang (张颢继)</name>
-                  </p>
-                  <p>
-                    I am a first-year master student at
-                    <a href="https://www.sigs.tsinghua.edu.cn/">Shenzhen International Graduate School</a>,
-                    <a href="https://www.tsinghua.edu.cn/">Tsinghua University</a>.
-                    I am fortunate to be supervised by Prof. <a href="https://andytang15.github.io/">Yansong Tang</a> in
-                    IVG@SZ group.
+    <div id="home"></div>
+    <table style="width:100%;max-width:840px;border:0px;border-spacing:0px;border-collapse:separate;margin:auto;">
+        <tbody>
+            <tr>
+                <td>
+                    <!-- 个人信息部分 -->
+                    <table style="width:100%;border:0px;margin:auto;">
+                        <tbody>
+                            <tr>
+                                <td style="padding:2.5%;width:63%;vertical-align:middle;text-align:justify;">
+                                    <p style="text-align:center">
+                                        <name>Haoji Zhang (张颢继)</name>
+                                    </p>
+                                    <p>
+                                        I am a second-year master's student at
+                                        <a href="https://www.sigs.tsinghua.edu.cn/">Shenzhen International Graduate
+                                            School</a>,
+                                        <a href="https://www.tsinghua.edu.cn/">Tsinghua University</a>, majoring in
+                                        <em>Data
+                                            Science and Information Technology</em>.
+                                        I expect to graduate in 2027.
+                                        I am fortunate to be supervised by
+                                        <a href="https://andytang15.github.io/">Prof. Yansong Tang</a>
+                                        in the IVG@SZ group.
+                                    </p>
+                                    <p>
+                                        Previously, I received my B.S. in <em>Mathematics and Physics</em> from Tsinghua
+                                        University in 2024.
+                                        I have also worked as a research intern in <a
+                                            href="https://ml.cs.tsinghua.edu.cn/">Prof. Jun Zhu's</a> Lab, <a
+                                            href="https://www.leaplab.ai/">Prof. Gao Huang's</a> Lab, and ByteDance
+                                        Seed (working with <a
+                                            href="https://scholar.google.com/citations?hl=en&user=OEZ816YAAAAJ">Dr.
+                                            Xiaojie Jin</a> and <a
+                                            href="https://scholar.google.com/citations?user=Q8iay0gAAAAJ&hl=en">Dr.
+                                            Jiashi Feng</a>).
+                                    </p>
+                                    <p>
+                                        My research interests include Multimodal Large Language Models and Efficient
+                                        Deep Learning.
+                                        Currently, my work focuses on Agentic Model and
+                                        Multimodal Reasoning.
+                                    </p>
+                                    <p style="text-align:center">
+                                        <a href="https://scholar.google.com/citations?user=0b0AIpsAAAAJ&hl=en"> Google
+                                            Scholar </a>
+                                        &nbsp;/&nbsp;
+                                        <a href="mailto:hodge013140gmail.com"> Email </a> &nbsp;/&nbsp;
+                                        <a href="https://github.com/zhang9302002"> Github </a> &nbsp;/&nbsp;
+                                        <a href="https://www.linkedin.com/in/haoji-zhang-2a4991266"> LinkedIn </a>
+                                    </p>
+                                </td>
+                                <td style="padding:2.5%;width:25%;max-width:25%">
+                                    <img style="width:100%;max-width:100%" alt="profile photo" src="images/zhj.jpg">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
 
-                    Before that, I got B.S. in Mathematics and Physics from Tsinghua University (THU) in 2024.
+                    <!-- News部分 -->
+                    <div id="news"></div>
+                    <table style="width:100%;border:0px;margin:auto;">
+                        <tbody>
+                            <tr>
+                                <td style="padding:20px;width:100%;vertical-align:middle">
+                                    <heading>News</heading>
+                                    <p>
+                                        <li>2025.08: We are excited to introduce <a
+                                                href="https://arxiv.org/abs/2508.04416">Thinking With Videos
+                                                (VITAL)</a>, the first agentic video reasoning framework with SFT +
+                                            RL.
+                                        </li>
+                                        <li>2025.05: <a
+                                                href="https://zhang9302002.github.io/vstream-iccv-page/">Flash-VStream</a>
+                                            is accepted by ICCV, 2025. <b>(First author, CCF-A)</b></li>
+                                        <li>2025.05: <a href="https://invinciblewyq.github.io/ponder-press-page/">Ponder
+                                                & Press</a> is accepted as ACL Findings, 2025. <b>(First author,
+                                                CCF-A)</b></li>
+                                        <li>2024.12: <a
+                                                href="https://github.com/LeapLabTHU/Uni-AdaFocus">Uni-AdaFocus</a> is
+                                            accepted by TPAMI, IF=20.8, 2025. <b>(First author, CCF-A, Q1, IF=20.8)</b>
+                                        </li>
+                                        <li>2024.06: <a
+                                                href="https://invinciblewyq.github.io/vstream-page/">Flash-VStream</a>
+                                            wins the 1st place in LOVEU challenge track 1, CVPR 2024.</li>
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
 
-                    I worked as a research intern in <a href="https://ml.cs.tsinghua.edu.cn/">TSAIL</a>, <a
-                      href="https://www.leaplab.ai/">LeapLabTHU</a>, and <a
-                      href="https://seed.bytedance.com/zh/">ByteDance Seed.</a>
-                  </p>
-                  <p>
-                    My research interests lie in the fields of Computer Vision and Efficient Deep Learning.
-                    My current research focuses on Long Video Understanding and Multimodal Large Language Models.
-                  </p>
-                  <p style="text-align:center">
-                    <a href="https://scholar.google.com/citations?user=0b0AIpsAAAAJ&hl=en"> Google Scholar </a>
-                    &nbsp/&nbsp
-                    <a href="mailto:hodge013140@gmail.com"> Email </a> &nbsp/&nbsp
-                    <a href="https://github.com/zhang9302002"> Github </a> &nbsp/&nbsp
-                    <a href="https://www.linkedin.com/in/haoji-zhang-2a4991266"> LinkedIn </a>
-                  </p>
+                    <!-- Publications部分（JS动态加载） -->
+                    <div id="publications-anchor"></div>
+                    <table style="width:100%;border:0px;margin:auto;">
+                        <tbody>
+                            <tr>
+                                <td style="padding:20px;width:100%;vertical-align:middle">
+                                    <heading>
+                                        Publications and Preprints [<a style="font-size:20px;"
+                                            href="https://scholar.google.com/citations?user=0b0AIpsAAAAJ&hl=en"> Full
+                                            List </a>]
+                                    </heading>
+                                    <div class="pub-switch-row">
+                                        <strong>Filter:</strong>
+                                        <a href="#" id="show-selected" class="pub-switch active">Show selected</a> /
+                                        <a href="#" id="show-date" class="pub-switch">Show by date</a> /
+                                        <a href="#" id="show-topic" class="pub-switch">Show by topic</a>
+                                    </div>
+                                    <div id="pub-years" style="margin:10px 0;"></div>
+                                    <div id="pub-topics" style="margin:10px 0;"></div>
+                                    <div style="margin-bottom:10px;">
+                                        (* Equal Contribution, <sup>&dagger;</sup> Corresponding Author)</div>
+                                    <!-- 由js进行渲染 -->
+                                    <div id="publications-list"></div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- 荣誉部分 -->
+                    <div id="honors"></div>
+                    <table style="width:100%;border:0px;margin:auto;">
+                        <tbody>
+                            <tr>
+                                <td style="padding:20px;width:100%;vertical-align:middle">
+                                    <heading>Honors and Awards</heading>
+                                    <p>
+                                        <li>Outstanding Bachelor Graduate of Beijing, 2024. (北京市优秀毕业生, <b>Top 5% in
+                                                Tsinghua University</b>)</li>
+                                        <li>Comprehensive Outstanding Scholarship of Tsinghua University, 2023.
+                                            (清华大学综合优秀奖学金, 校级一等)</li>
+                                        <li>Comprehensive Outstanding Scholarship of Tsinghua University, 2022.
+                                            (清华大学综合优秀奖学金, 校级一等)</li>
+                                        <li>Comprehensive Outstanding Scholarship of Tsinghua University, 2021.
+                                            (清华大学综合优秀奖学金, 校级一等)</li>
+                                        <li>THUWC2019 <strong style="color: red;">Gold Medal</strong>, 2019.
+                                            (清华大学全国优秀中学生信息学冬令营<strong style="color: red;">金牌</strong>)</li>
+                                        <li>NOIWC2019 <b>Silver Medal</b>, 2019. (第36届全国信息学奥林匹克冬令营<b>银牌</b>)</li>
+                                        <li>NOI2019 <b>Bronze Medal</b>, 2019. (第36届全国信息学奥林匹克竞赛<b>铜牌</b>)</li>
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+                    <!-- Academic Services部分 -->
+                    <table style="width:100%;border:0px;margin:auto;">
+                        <tbody>
+                            <tr>
+                                <td style="padding:20px;width:100%;vertical-align:middle">
+                                    <heading>Academic Services</heading>
+                                    <p>
+                                        <li><b>Reviewer:</b> AAAI, JVCI </li>
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- 联系方式 -->
+                    <!-- <div id="contact"></div>
+                    <table style="width:100%;border:0px;margin:auto;">
+                        <tbody>
+                            <tr>
+                                <td style="padding:20px;width:100%;vertical-align:middle">
+                                    <heading>Contact</heading>
+                                    <p>
+                                        Email: hodge013140gmail.com<br>
+                                        Github: <a href="https://github.com/zhang9302002">zhang9302002</a><br>
+                                        LinkedIn: <a href="https://www.linkedin.com/in/haoji-zhang-2a4991266">Haoji
+                                            Zhang</a>
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table> -->
+
+                    <!-- 结尾模板和访问统计 -->
+                    <table style="width:100%;border:0px;margin:auto;">
+                        <tbody>
+                            <tr>
+                                <td style="padding:0px">
+                                    <br>
+                                    <p style="text-align:right;font-size:small;">
+                                        <a href="https://jonbarron.info/">Website Template</a>
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div style="text-align:center;">
+                        <a href='https://clustrmaps.com/site/1bza8' title='Visit tracker'><img
+                                src='//clustrmaps.com/map_v2.png?cl=ffffff&w=600&t=tt&d=QxeVGgz0m5w9x81-AcBiDpQetnZvvFVE5hJXwiBhmjE' /></a>
+                    </div>
                 </td>
-                <td style="padding:2.5%;width:30%;max-width:30%">
-                  <img style="width:70%;max-width:70%" alt="profile photo" src="images/zhj.jpg">
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
-          <!-- news -->
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:20px;width:100%;vertical-align:middle">
-                  <heading>News</heading>
-                  <p>
-
-                    <li style="margin: 5px;">
-                      2025.05: <a href="https://zhang9302002.github.io/vstream-iccv-page/">Flash-VStream</a> is accepted
-                      by ICCV, 2025.
-                      <b>(First author, CCF-A)</b>
-                    </li>
-                    <li style="margin: 5px;">
-                      2025.05: <a href="https://invinciblewyq.github.io/ponder-press-page/">Ponder & Press</a> is
-                      accepted as ACL Findings, 2025.
-                      <b>(First author, CCF-A)</b>
-                    </li>
-                    <li style="margin: 5px;">
-                      2024.12: <a href="https://github.com/LeapLabTHU/Uni-AdaFocus">Uni-AdaFocus</a> is accepted by
-                      TPAMI, IF=20.8, 2025.
-                      <b>(First author, CCF-A, Q1, IF=20.8)</b>
-                    </li>
-                    <li style="margin: 5px;">
-                      2024.06: <a href="https://invinciblewyq.github.io/vstream-page/">Flash-VStream</a> wins the 1st
-                      place in LOVEU challenge track 1, CVPR 2024.
-                    </li>
-                    <!-- <li style="margin: 5px;" >
-            2023.09: Start an internship at Bytedance. 
-          </li>
-          <li style="margin: 5px;" >
-            2023.03: <a href="https://mybabyyh.github.io/Preim3D">PREIM3D</a> is accepted by <strong style="color: red;">CVPR 2023. 
-          </li> -->
-
-                  </p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
-          <!-- publications -->
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:20px;width:100%;vertical-align:middle">
-                  <p>
-                    <heading>Publications and Preprints</heading>
-                  </p>
-                  <p>* indicates equal contribution, <sup>&dagger;</sup> indicates corresponding author</p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
-          <!-- publication list -->
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-
-
-              <!-- Flash-VStream-ICCV -->
-              <tr>
-                <td style="padding:20px;width:30%;max-width:30%" align="center">
-                  <img style="width:100%;max-width:100%" src="images/flash.jpg" alt="dise">
-                </td>
-                <td width="75%" valign="center">
-                  <papertitle>Flash-VStream: Efficient Real-Time Understanding for Long Video Streams</papertitle>
-                  <br>
-                  <strong>Haoji Zhang</strong>*,
-                  <a class="black-link" href="https://github.com/InvincibleWyq/">Yiqin Wang</a>*,
-                  <a class="black-link" href="https://andytang15.github.io/">Yansong Tang</a><sup>&dagger;</sup>,
-                  <a class="black-link" href="https://yongliu20.github.io/">Yong Liu</a>,
-                  <a class="black-link" href="https://sites.google.com/site/jshfeng/home">Jiashi Feng</a>,
-                  <a class="black-link" href="https://scholar.google.com.sg/citations?user=OEZ816YAAAAJ&hl=en">Xiaojie
-                    Jin</a><sup>&dagger;</sup>
-                  <br>
-                  <em>
-                    IEEE/CVF International Conference on Computer Vision (<strong style="color:red">ICCV</strong>), 2025
-                  </em>
-                  <br>
-                  <a href="https://arxiv.org/abs/2506.23825">[arXiv]</a>
-                  <a href="https://github.com/IVGSZ/Flash-VStream/">[Code]</a>
-                  <a href="https://zhang9302002.github.io/vstream-iccv-page/">[Project Page]</a>
-                  <br>
-                  We propose Flash-VStream, an efficient VLM with a novel memory mechanism that enables real-time
-                  understanding and querying of extremely long video streams.
-                </td>
-              </tr>
-
-              <!-- Ponder & Press -->
-              <tr>
-                <td style="padding:20px;width:30%;max-width:30%" align="center">
-                  <img style="width:100%;max-width:100%" src="images/ponder.png" alt="dise">
-                </td>
-                <td width="75%" valign="center">
-                  <papertitle>Ponder & Press: Advancing Visual GUI Agent towards General Computer Control</papertitle>
-                  <br>
-                  <a class="black-link" href="https://github.com/InvincibleWyq/">Yiqin Wang</a>*,
-                  <strong>Haoji Zhang</strong>*,
-                  <a class="black-link" href="https://trilarflagz.github.io/">Jingqi Tian</a>,
-                  <a class="black-link" href="https://andytang15.github.io/">Yansong Tang</a><sup>&dagger;</sup>
-                  <br>
-                  <em>Findings of the Association for Computational Linguistics ACL (<strong
-                      style="color: red;">ACL</strong>), 2025</em>
-                  <br>
-                  <a href="https://arxiv.org/abs/2412.01268">[arXiv]</a>
-                  <a href="https://invinciblewyq.github.io/ponder-press-page/">[Code]</a>
-                  <a href="https://invinciblewyq.github.io/ponder-press-page/">[Project Page]</a>
-                  <br>
-                  We propose Ponder & Press, a divide-and-conquer GUI agent framework that only relies on visual input
-                  to mimic human-like interaction with GUIs.
-                </td>
-              </tr>
-
-              <!-- Uni-AdaFocus -->
-              <tr>
-                <td style="padding:20px;width:30%;max-width:30%" align="center">
-                  <img style="width:100%;max-width:100%" src="images/adafocus.jpg" alt="dise">
-                </td>
-                <td width="75%" valign="center">
-                  <papertitle>Uni-AdaFocus: Spatial-Temporal Dynamic Computation for Video Recognition</papertitle>
-                  <br>
-                  <a class="black-link" href="https://www.wyl.cool/">Yulin Wang</a>*,
-                  <strong>Haoji Zhang</strong>*,
-                  <a class="black-link" href="https://scholar.google.com/citations?user=Q9cLkdcAAAAJ">Yang Yue</a>,
-                  <a class="black-link" href="https://scholar.google.com/citations?user=rw6vWdcAAAAJ">Shiji Song</a>,
-                  Chao Deng,
-                  Junlan Feng,
-                  <a class="black-link" href="https://www.gaohuang.net/">Gao Huang</a><sup>&dagger;</sup>
-                  <br>
-                  <em>IEEE Transactions on Pattern Analysis and Machine Intelligence (<strong
-                      style="color: red;">TPAMI</strong>), 2025</em>
-                  <br>
-                  <a href="https://arxiv.org/abs/2412.11228">[arXiv]</a>
-                  <a href="https://ieeexplore.ieee.org/abstract/document/10787270">[IEEE Paper]</a>
-                  <a href="https://github.com/LeapLabTHU/Uni-AdaFocus">[Code]</a>
-                  <br>
-                  We explore the phenomenon of spatial/temporal/sample-wise redundancy and propose Uni-AdaFocus, an
-                  efficient end-to-end video recognition framework.
-                </td>
-              </tr>
-
-              <!-- Flash-VStream -->
-              <tr>
-                <td style="padding:20px;width:30%;max-width:30%" align="center">
-                  <img style="width:100%;max-width:100%" src="images/flash_vstream.png" alt="dise">
-                </td>
-                <td width="75%" valign="center">
-                  <papertitle>Flash-VStream: Memory-Based Real-Time Understanding for Long Video Streams</papertitle>
-                  <br>
-                  <strong>Haoji Zhang</strong>*,
-                  <a class="black-link" href="https://github.com/InvincibleWyq/">Yiqin Wang</a>*,
-                  <a class="black-link" href="https://andytang15.github.io/">Yansong Tang</a><sup>&dagger;</sup>,
-                  <a class="black-link" href="https://yongliu20.github.io/">Yong Liu</a>,
-                  <a class="black-link" href="https://sites.google.com/site/jshfeng/home">Jiashi Feng</a>,
-                  <a class="black-link" href="https://jifengdai.org/">Jifeng Dai</a>,
-                  <a class="black-link" href="https://scholar.google.com.sg/citations?user=OEZ816YAAAAJ&hl=en">Xiaojie
-                    Jin</a><sup>&dagger;</sup>
-                  <br>
-                  <em>
-                    Preprint, 1st place solution of
-                    <a class="black-link" href="https://sites.google.com/view/loveucvpr24/track1">LOVEU
-                      workshop</a>@<strong style="color: red;">CVPR</strong>, 2024
-                    <a href="images/loveu1st.png">[Award]</a>
-                  </em>
-                  <br>
-                  <a href="https://arxiv.org/abs/2406.08085">[arXiv]</a>
-                  <a href="https://github.com/IVGSZ/Flash-VStream">[Code]</a>
-                  <a href="https://invinciblewyq.github.io/vstream-page/">[Project Page]</a>
-                  <br>
-                  We proposed Flash-VStream, a video-language model that simulates the memory mechanism of human, able
-                  to process long video streams in real-time.
-                </td>
-              </tr>
-
-            </tbody>
-          </table>
-
-          <!-- full publication list -->
-          <div id="full">
-            <table
-              style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-              <tbody>
-
-                <!-- PREIM3D -->
-                <tr>
-                  <td style="padding:20px;width:30%;max-width:30%" align="center">
-                    <img style="width:100%;max-width:100%" src="images/preim3d.jpg" alt="dise">
-                  </td>
-                  <td width="75%" valign="center">
-                    <papertitle>PREIM3D: 3D Consistent Precise Image Attribute Editing from a Single Image</papertitle>
-                    <br>
-                    Jianhui Li,
-                    <a class="black-link" href="https://scholar.google.com/citations?user=PeF1aPkAAAAJ&hl=en">Jianmin
-                      Li</a><sup>&dagger;</sup>,
-                    <strong>Haoji Zhang</strong>,
-                    <a class="black-link" href="https://lsl.zone">Shilong Liu</a>,
-                    <a class="black-link" href="https://thuwzy.github.io">Zhengyi Wang</a>,
-                    Zihao Xiao,
-                    <a class="black-link" href="https://scholar.google.com/citations?user=0d80xSIAAAAJ&hl=en">Kaiwen
-                      Zheng</a>,
-                    <a class="black-link" href="https://ml.cs.tsinghua.edu.cn/~jun/index.shtml">Jun
-                      Zhu</a><sup>&dagger;</sup>
-                    <br>
-                    <em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (<strong
-                        style="color: red;">CVPR</strong>), 2023</em>
-                    <br>
-                    <a href="https://arxiv.org/abs/2304.10263">[arXiv]</a>
-                    <a href="https://github.com/mybabyyh/Preim3D">[Code]</a>
-                    <a href="https://mybabyyh.github.io/Preim3D/">[Project Page]</a>
-                    <br>
-                    We propose PREIM3D, a novel framework for 3D-aware image attribute editing that achieves better 3D
-                    consistency and precision at large camera poses.
-                  </td>
-                </tr>
-
-                <!-- UniVG-R1 -->
-                <tr>
-                  <td style="padding:20px;width:30%;max-width:30%" align="center">
-                    <img style="width:100%;max-width:100%" src="images/univg.jpg" alt="dise">
-                  </td>
-                  <td width="75%" valign="center">
-                    <papertitle>UniVG-R1: Reasoning Guided Universal Visual Grounding with Reinforcement Learning
-                    </papertitle>
-                    <br>
-                    <a class="black-link" href="https://sulebai.github.io/">Sule Bai</a>,
-                    <a class="black-link"
-                      href="https://scholar.google.com/citations?user=-pfkprkAAAAJ&amp;hl=zh-CN&amp;oi=ao">Mingxing
-                      Li</a>,
-                    <a class="black-link" href="https://yongliu20.github.io/">Yong Liu</a>,
-                    Jing Tang,
-                    <strong>Haoji Zhang</strong>,
-                    Lei Sun,
-                    <a class="black-link" href="https://cxxgtxy.github.io/">Xiangxiang Chu</a>,
-                    <a class="black-link" href="https://andytang15.github.io/">Yansong Tang</a><sup>&dagger;</sup>
-                    <br>
-                    <em>Preprint, 2025</em>
-                    <br>
-                    <a href="https://arxiv.org/abs/2505.14231">[arXiv]</a>
-                    <a href="https://github.com/AMAP-ML/UniVG-R1">[Code]</a>
-                    <a href="https://amap-ml.github.io/UniVG-R1-page/">[Project Page]</a>
-                    <br>
-                    We propose UniVG-R1, a reasoning guided MLLM for universal visual grounding.
-                  </td>
-                </tr>
-
-                <!-- SC-CLIP -->
-                <tr>
-                  <td style="padding:20px;width:30%;max-width:30%" align="center">
-                    <img style="width:100%;max-width:100%" src="images/scclip.jpg" alt="dise">
-                  </td>
-                  <td width="75%" valign="center">
-                    <papertitle>Self-Calibrated CLIP for Training-Free Open-Vocabulary Segmentation</papertitle>
-                    <br>
-                    <a class="black-link" href="https://sulebai.github.io/">Sule Bai</a>*,
-                    <a class="black-link" href="https://yongliu20.github.io/">Yong Liu</a>*,
-                    <a class="black-link" href="https://github.com/LambdaGuard/">Yifei Han</a>,
-                    <strong>Haoji Zhang</strong>,
-                    <a class="black-link" href="https://andytang15.github.io/">Yansong Tang</a><sup>&dagger;</sup>
-                    <br>
-                    <em>Preprint, 2024</em>
-                    <br>
-                    <a href="https://arxiv.org/abs/2411.15869">[arXiv]</a>
-                    <a href="https://github.com/SuleBai/SC-CLIP">[Code]</a>
-                    <br>
-                    We propose SC-CLIP, a training-free open-vocabulary segmentation framework that achieves competitive
-                    performance on various segmentation tasks.
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <!-- full publication list button -->
-          <div id="click">
-            <p align=right><a href="#Show-the-full-publication-list" style="padding:20px;"
-                onclick="toggleFullList(this);">Show full publication list</a></p>
-          </div>
-          <script>
-            function toggleFullList(txt) {
-              var fullList = document.getElementById("full");
-              var clickButton = document.getElementById("click");
-              if (fullList.style.display === "block") {
-                fullList.style.display = "none";
-                txt.innerHTML = "Show full publication list";
-              } else {
-                fullList.style.display = "block";
-                txt.innerHTML = "Hide full publication list";
-              }
-            }
-          </script>
-
-
-          <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr>
-        <td style="padding:20px;width:100%;vertical-align:middle">
-          <p><heading>Industrial Experience</heading></p>
-          <p>
-          </p>
-        </td>
-      </tr>
-    </tbody></table> -->
-
-          <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr>
-        <td style="padding:20px;width:30%;max-width:30%" align="center">
-          <img style="width:80%;max-width:80%" src="images/arc-logo.png" alt="dise">
-        </td>
-        <td width="75%" valign="center">
-          <papertitle>Tencent ARC Lab, Shenzhen, China. December-Now, 2023.</papertitle>
-            <li style="margin: 5px;">  Project: Text to 3D Object Generation. </li>
-            <li style="margin: 5px;">  Work with Dr. <a href="https://xinntao.github.io/">Xintao Wang</a>. </li>
-      </tr>
-      <tr>
-        <td style="padding:20px;width:25%;max-width:25%" align="center">
-          <img style="width:80%;max-width:80%" src="images/ms-logo.png" alt="dise">
-        </td>
-        <td width="75%" valign="center">
-          <papertitle>Microsoft Research - Asia (MSRA), Beijing, China. April-December, 2023.</papertitle>
-          <li style="margin: 5px;">  Project: Human Motion Understanding and Generation. </li>
-          <li style="margin: 5px;">  Work with Dr. <a href="https://www.chunyuwang.org/">Chunyu Wang</a>, Dr. <a href="https://www.microsoft.com/en-us/research/people/xtong/">Xin Tong</a>. </li>
-          <br>
-        </td>
-      </tr>
-    </tbody></table> -->
-
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:20px;width:100%;vertical-align:middle">
-                  <heading>Selected Honors and Awards</heading>
-                  <p>
-
-                    <li style="margin: 5px;">
-                      Outstanding Bachelor Graduate of Beijing, 2024.
-                      (北京市优秀毕业生, <b>Top 5% in Tsinghua University</b>)
-                    </li>
-                    <li style="margin: 5px;">
-                      Comprehensive Outstanding Scholarship of Tsinghua University, 2023.
-                      (清华大学综合优秀奖学金, 校级一等)
-                    </li>
-                    <li style="margin: 5px;">
-                      Comprehensive Outstanding Scholarship of Tsinghua University, 2022.
-                      (清华大学综合优秀奖学金, 校级一等)
-                    </li>
-                    <li style="margin: 5px;">
-                      Comprehensive Outstanding Scholarship of Tsinghua University, 2021.
-                      (清华大学综合优秀奖学金, 校级一等)
-                    </li>
-                    <li style="margin: 5px;">
-                      THUWC2019 <strong style="color: red;">Gold Medal</strong>, 2019.
-                      (清华大学全国优秀中学生信息学冬令营<strong style="color: red;">金牌</strong>)
-                    </li>
-                    <li style="margin: 5px;">
-                      NOIWC2019 <b>Silver Medal</b>, 2019.
-                      (第36届全国信息学奥林匹克冬令营<b>银牌</b>)
-                    </li>
-                    <li style="margin: 5px;">
-                      NOI2019 <b>Bronze Medal</b>, 2019.
-                      (第36届全国信息学奥林匹克竞赛<b>铜牌</b>)
-                    </li>
-
-                  </p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
-          <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr>
-        <td style="padding:20px;width:100%;vertical-align:middle">
-          <heading>Activities</heading>
-          <p>
-            <li style="margin: 5px;"> 
-              <b>Conference Reviewer:</b> CVPR 2024, FG 2023
-            </li>
-          </p>
-        </td>
-      </tr>
-    </tbody></table> -->
-
-
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:5px">
-                  <br>
-                  <p style="text-align:right;font-size:small;">
-                    <a href="https://jonbarron.info/">Website Template</a>
-                  </p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
-          <p>
-            <center>
-              <a href='https://clustrmaps.com/site/1bza8' title='Visit tracker'><img
-                  src='//clustrmaps.com/map_v2.png?cl=ffffff&w=600&t=tt&d=QxeVGgz0m5w9x81-AcBiDpQetnZvvFVE5hJXwiBhmjE' /></a>
-
-            </center>
-          </p>
-        </td>
-      </tr>
-  </table>
-
-  <p>
-    <center>
-      &copy; Haoji Zhang | Last updated: May 20, 2025
-    </center>
-  </p>
+            </tr>
+        </tbody>
+    </table>
+    <p>
+        <center>
+            &copy; Haoji Zhang | Last updated: May 20, 2025
+        </center>
+    </p>
 </body>
 
 </html>

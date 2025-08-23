@@ -7,6 +7,7 @@ const publications = [
         year: 2025,
         links: [
             { label: "arXiv", url: "https://arxiv.org/abs/2508.04416" },
+            { label: "Data", url: "https://huggingface.co/datasets/zhang9302002/MultiTaskVideoReasoning" },
         ],
         description: "We propose Flash-VStream, an efficient VLM with a novel memory mechanism that enables real-time understanding and querying of extremely long video streams.",
         selected: true,

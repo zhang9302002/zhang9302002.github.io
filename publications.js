@@ -23,6 +23,7 @@ const publications = [
         year: 2025,
         links: [
             { label: "arXiv", url: "https://arxiv.org/abs/2506.23825" },
+            { label: "Paper", url: "https://openaccess.thecvf.com/content/ICCV2025/html/Zhang_Flash-VStream_Efficient_Real-Time_Understanding_for_Long_Video_Streams_ICCV_2025_paper.html" },
             { label: "Code", url: "https://github.com/IVGSZ/Flash-VStream/" },
             { label: "Project Page", url: "https://zhang9302002.github.io/vstream-iccv-page/" }
         ],
@@ -38,6 +39,7 @@ const publications = [
         year: 2025,
         links: [
             { label: "arXiv", url: "https://arxiv.org/abs/2412.01268" },
+            { label: "Paper", url: "https://aclanthology.org/2025.findings-acl.76/" },
             { label: "Code", url: "https://invinciblewyq.github.io/ponder-press-page/" },
             { label: "Project Page", url: "https://invinciblewyq.github.io/ponder-press-page/" }
         ],
@@ -53,7 +55,7 @@ const publications = [
         year: 2025,
         links: [
             { label: "arXiv", url: "https://arxiv.org/abs/2412.11228" },
-            { label: "IEEE Paper", url: "https://ieeexplore.ieee.org/abstract/document/10787270" },
+            { label: "Paper", url: "https://ieeexplore.ieee.org/abstract/document/10787270" },
             { label: "Code", url: "https://github.com/LeapLabTHU/Uni-AdaFocus" }
         ],
         description: "We explore the phenomenon of spatial/temporal/sample-wise redundancy and propose Uni-AdaFocus, an efficient end-to-end video recognition framework.",

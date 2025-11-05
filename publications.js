@@ -90,7 +90,7 @@ const publications = [
             { label: "Project Page", url: "https://mybabyyh.github.io/Preim3D/" }
         ],
         description: "We propose PREIM3D, a novel framework for 3D-aware image attribute editing that achieves better 3D consistency and precision at large camera poses.",
-        selected: false,
+        selected: true,
         topics: []
     },
     {

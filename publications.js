@@ -108,10 +108,10 @@ const publications = [
         image: "images/flash_vstream.png",
         title: "Flash-VStream: Memory-Based Real-Time Understanding for Long Video Streams",
         authors: "<strong>Haoji Zhang</strong>*, Yiqin Wang*, Yansong Tang<sup>&dagger;</sup>, Yong Liu, Jiashi Feng, Jifeng Dai, Xiaojie Jin<sup>&dagger;</sup>",
-        venue: "Preprint, 1st place solution of LOVEU workshop@CVPR",
+        venue: "1st on LOVEU@CVPR'24: Long-term VQA",
         year: 2024,
         links: [
-            { label: "arXiv", url: "https://arxiv.org/abs/2406.08085" },
+            { label: "Tech Report", url: "https://arxiv.org/abs/2406.08085" },
             { label: "Code", url: "https://github.com/IVGSZ/Flash-VStream" },
             { label: "Project Page", url: "https://invinciblewyq.github.io/vstream-page/" },
             { label: "Award", url: "images/loveu1st.png" }

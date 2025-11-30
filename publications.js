@@ -63,6 +63,35 @@ const publications = [
         topics: ["Efficient Deep Learning"]
     },
     {
+        image: "images/univg.jpg",
+        title: "UniVG-R1: Reasoning Guided Universal Visual Grounding with Reinforcement Learning",
+        authors: "Sule Bai, Mingxing Li, Yong Liu, Jing Tang, <strong>Haoji Zhang</strong>, Lei Sun, Xiangxiang Chu, Yansong Tang<sup>&dagger;</sup>",
+        venue: "Preprint",
+        year: 2025,
+        links: [
+            { label: "arXiv", url: "https://arxiv.org/abs/2505.14231" },
+            { label: "Code", url: "https://github.com/AMAP-ML/UniVG-R1" },
+            { label: "Project Page", url: "https://amap-ml.github.io/UniVG-R1-page/" }
+        ],
+        description: "We propose UniVG-R1, a reasoning guided MLLM for universal visual grounding.",
+        selected: false,
+        topics: ["Multimodal Reasoning"]
+    },
+    {
+        image: "images/scclip.png",
+        title: "Self-Calibrated CLIP for Training-Free Open-Vocabulary Segmentation",
+        authors: "Sule Bai*, Yong Liu*, Yifei Han, <strong>Haoji Zhang</strong>, Yansong Tang<sup>&dagger;</sup>",
+        venue: "IEEE Transactions on Image Processing (<strong style=\"color:red\">TIP</strong>)",
+        year: 2025,
+        links: [
+            { label: "arXiv", url: "https://arxiv.org/abs/2411.15869" },
+            { label: "Code", url: "https://github.com/SuleBai/SC-CLIP" }
+        ],
+        description: "We propose SC-CLIP, a training-free open-vocabulary segmentation framework that achieves competitive performance on various segmentation tasks.",
+        selected: true,
+        topics: ["Efficient Deep Learning"]
+    },
+    {
         image: "images/flash_vstream.png",
         title: "Flash-VStream: Memory-Based Real-Time Understanding for Long Video Streams",
         authors: "<strong>Haoji Zhang</strong>*, Yiqin Wang*, Yansong Tang<sup>&dagger;</sup>, Yong Liu, Jiashi Feng, Jifeng Dai, Xiaojie Jin<sup>&dagger;</sup>",
@@ -92,34 +121,5 @@ const publications = [
         description: "We propose PREIM3D, a novel framework for 3D-aware image attribute editing that achieves better 3D consistency and precision at large camera poses.",
         selected: true,
         topics: []
-    },
-    {
-        image: "images/univg.jpg",
-        title: "UniVG-R1: Reasoning Guided Universal Visual Grounding with Reinforcement Learning",
-        authors: "Sule Bai, Mingxing Li, Yong Liu, Jing Tang, <strong>Haoji Zhang</strong>, Lei Sun, Xiangxiang Chu, Yansong Tang<sup>&dagger;</sup>",
-        venue: "Preprint",
-        year: 2025,
-        links: [
-            { label: "arXiv", url: "https://arxiv.org/abs/2505.14231" },
-            { label: "Code", url: "https://github.com/AMAP-ML/UniVG-R1" },
-            { label: "Project Page", url: "https://amap-ml.github.io/UniVG-R1-page/" }
-        ],
-        description: "We propose UniVG-R1, a reasoning guided MLLM for universal visual grounding.",
-        selected: false,
-        topics: ["Multimodal Reasoning"]
-    },
-    {
-        image: "images/scclip.jpg",
-        title: "Self-Calibrated CLIP for Training-Free Open-Vocabulary Segmentation",
-        authors: "Sule Bai*, Yong Liu*, Yifei Han, <strong>Haoji Zhang</strong>, Yansong Tang<sup>&dagger;</sup>",
-        venue: "Preprint",
-        year: 2024,
-        links: [
-            { label: "arXiv", url: "https://arxiv.org/abs/2411.15869" },
-            { label: "Code", url: "https://github.com/SuleBai/SC-CLIP" }
-        ],
-        description: "We propose SC-CLIP, a training-free open-vocabulary segmentation framework that achieves competitive performance on various segmentation tasks.",
-        selected: false,
-        topics: ["Efficient Deep Learning"]
     }
 ];

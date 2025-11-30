@@ -108,7 +108,7 @@ const publications = [
         image: "images/flash_vstream.png",
         title: "Flash-VStream: Memory-Based Real-Time Understanding for Long Video Streams",
         authors: "<strong>Haoji Zhang</strong>*, Yiqin Wang*, Yansong Tang<sup>&dagger;</sup>, Yong Liu, Jiashi Feng, Jifeng Dai, Xiaojie Jin<sup>&dagger;</sup>",
-        venue: "1st on LOVEU@CVPR'24: Long-term VQA",
+        venue: "1st on LOVEU@<strong style=\"color:red\">CVPR'24</strong>: Long-term VQA",
         year: 2024,
         links: [
             { label: "Tech Report", url: "https://arxiv.org/abs/2406.08085" },

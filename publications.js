@@ -2,7 +2,7 @@ const publications = [
     {
         image: "images/vital.png",
         title: "Thinking With Videos: Multimodal Tool-Augmented Reinforcement Learning for Long Video Reasoning",
-        authors: "<strong>Haoji Zhang</strong>*, Xin Gu*, Jiawen Li, Chixiang Ma, Sule Bai, Chubin Zhang, Bowen Zhang, Zhichao Zhou, Dongliang He, Yansong Tang<sup>&dagger;</sup>",
+        authors: "<strong>Haoji Zhang*</strong>, Xin Gu*, Jiawen Li, Chixiang Ma, Sule Bai, Chubin Zhang, Bowen Zhang, Zhichao Zhou, Dongliang He, Yansong Tang<sup>&dagger;</sup>",
         venue: "Preprint",
         year: 2025,
         links: [
@@ -18,7 +18,7 @@ const publications = [
     {
         image: "images/stvgo1.png",
         title: "Thinking With Bounding Boxes: Enhancing Spatio-Temporal Video Grounding via Reinforcement Fine-Tuning",
-        authors: "Xin Gu*, <strong>Haoji Zhang</strong>*, Qihang Fan, Jingxuan Niu, Zhipeng Zhang, Libo Zhang, Guang Chen, Fan Chen, Longyin Wen, Sijie Zhu<sup>&dagger;</sup>",
+        authors: "Xin Gu*, <strong>Haoji Zhang*</strong>, Qihang Fan, Jingxuan Niu, Zhipeng Zhang, Libo Zhang, Guang Chen, Fan Chen, Longyin Wen, Sijie Zhu<sup>&dagger;</sup>",
         venue: "Preprint",
         year: 2025,
         links: [
@@ -29,9 +29,24 @@ const publications = [
         topics: ["Multimodal Reasoning", "Agentic Model"]
     },
     {
+        image: "images/vidi2.png",
+        title: "Vidi2: Large Multimodal Models for Video Understanding and Creation",
+        authors: "Celong Liu, Chia-Wen Kuo, Chuang Huang, Dawei Du, Fan Chen, Guang Chen, <strong>Haoji Zhang</strong>, Haojun Zhao, Lingxi Zhang, Lu Guo, Lusha Li, Longyin Wen<sup>&dagger;</sup>, Qihang Fan, Qingyu Chen, Rachel Deng, Sijie Zhu, Stuart Siew, Tong Jin, Weiyan Tao, Wen Zhong, Xiaohui Shen<sup>&dagger;</sup>, Xin Gu, Zhenfang Chen, Zuhua Lin (Alphabetical)",
+        venue: "Technical Report",
+        year: 2025,
+        links: [
+            { label: "arXiv", url: "https://arxiv.org/abs/2511.19529" },
+            { label: "Code", url: "https://github.com/bytedance/vidi" },
+            { label: "Project Page", url: "https://bytedance.github.io/vidi-website/" },
+        ],
+        description: "Vidi2 delivers fine-grained spatio‑temporal grounding and improved temporal retrieval for long videos, with new benchmarks showing strong performance versus leading proprietary models.",
+        selected: true,
+        topics: ["Long Video Understanding"]
+    },
+    {
         image: "images/flash.jpg",
         title: "Flash-VStream: Efficient Real-Time Understanding for Long Video Streams",
-        authors: "<strong>Haoji Zhang</strong>*, Yiqin Wang*, Yansong Tang<sup>&dagger;</sup>, Yong Liu, Jiashi Feng, Xiaojie Jin<sup>&dagger;</sup>",
+        authors: "<strong>Haoji Zhang*</strong>, Yiqin Wang*, Yansong Tang<sup>&dagger;</sup>, Yong Liu, Jiashi Feng, Xiaojie Jin<sup>&dagger;</sup>",
         venue: "IEEE/CVF International Conference on Computer Vision (<strong style=\"color:red\">ICCV</strong>)",
         year: 2025,
         links: [
@@ -47,7 +62,7 @@ const publications = [
     {
         image: "images/ponder.png",
         title: "Ponder & Press: Advancing Visual GUI Agent towards General Computer Control",
-        authors: "Yiqin Wang*, <strong>Haoji Zhang</strong>*, Jingqi Tian, Yansong Tang<sup>&dagger;</sup>",
+        authors: "Yiqin Wang*, <strong>Haoji Zhang*</strong>, Jingqi Tian, Yansong Tang<sup>&dagger;</sup>",
         venue: "Findings of the Association for Computational Linguistics (<strong style=\"color:red\">ACL</strong>)",
         year: 2025,
         links: [
@@ -63,7 +78,7 @@ const publications = [
     {
         image: "images/adafocus.jpg",
         title: "Uni-AdaFocus: Spatial-Temporal Dynamic Computation for Video Recognition",
-        authors: "Yulin Wang*, <strong>Haoji Zhang</strong>*, Yang Yue, Shiji Song, Chao Deng, Junlan Feng, Gao Huang<sup>&dagger;</sup>",
+        authors: "Yulin Wang*, <strong>Haoji Zhang*</strong>, Yang Yue, Shiji Song, Chao Deng, Junlan Feng, Gao Huang<sup>&dagger;</sup>",
         venue: "IEEE Transactions on Pattern Analysis and Machine Intelligence (<strong style=\"color:red\">TPAMI</strong>)",
         year: 2025,
         links: [
@@ -107,7 +122,7 @@ const publications = [
     {
         image: "images/flash_vstream.png",
         title: "Flash-VStream: Memory-Based Real-Time Understanding for Long Video Streams",
-        authors: "<strong>Haoji Zhang</strong>*, Yiqin Wang*, Yansong Tang<sup>&dagger;</sup>, Yong Liu, Jiashi Feng, Jifeng Dai, Xiaojie Jin<sup>&dagger;</sup>",
+        authors: "<strong>Haoji Zhang*</strong>, Yiqin Wang*, Yansong Tang<sup>&dagger;</sup>, Yong Liu, Jiashi Feng, Jifeng Dai, Xiaojie Jin<sup>&dagger;</sup>",
         venue: "1st on LOVEU@<strong style=\"color:red\">CVPR'24</strong>: Long-term VQA",
         year: 2024,
         links: [

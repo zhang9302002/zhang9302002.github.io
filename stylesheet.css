@@ -93,7 +93,8 @@ a {
 
 strong {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  color: #111;
+  /* font-size: 14px; */
 }
 
 heading {
@@ -203,20 +204,26 @@ li {
 
 .publication-title {
   font-weight: bold;
-  /* font-size: 18px; */
+  /* font-size: 13px; */
   margin-bottom: 2px;
 }
 
 .publication-authors {
+  /* font-size: 13px; */
+  color: #777;
+  /* font-style: italic; */
   margin-bottom: 2px;
 }
 
 .publication-venue {
+  /* font-size: 13px; */
+  color: #777;
   font-style: italic;
   margin-bottom: 2px;
 }
 
 .publication-links a {
+  /* font-size: 13px; */
   color: #1772d0;
 }
 

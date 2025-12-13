@@ -113,6 +113,7 @@ const publications = [
         year: 2025,
         links: [
             { label: "arXiv", url: "https://arxiv.org/abs/2411.15869" },
+            { label: "Paper", url: "https://ieeexplore.ieee.org/document/11291123" },
             { label: "Code", url: "https://github.com/SuleBai/SC-CLIP" }
         ],
         description: "We propose SC-CLIP, a training-free open-vocabulary segmentation framework that achieves competitive performance on various segmentation tasks.",

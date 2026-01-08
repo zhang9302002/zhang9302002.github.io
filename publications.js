@@ -31,12 +31,14 @@ const publications = [
     {
         image: "images/vidi2.png",
         title: "Vidi2: Large Multimodal Models for Video Understanding and Creation",
-        authors: "Celong Liu, Chia-Wen Kuo, Chuang Huang, Dawei Du, Fan Chen, Guang Chen, <strong>Haoji Zhang</strong>, Haojun Zhao, Lingxi Zhang, Lu Guo, Lusha Li, Longyin Wen<sup>&dagger;</sup>, Qihang Fan, Qingyu Chen, Rachel Deng, Sijie Zhu, Stuart Siew, Tong Jin, Weiyan Tao, Wen Zhong, Xiaohui Shen<sup>&dagger;</sup>, Xin Gu, Zhenfang Chen, Zuhua Lin (Alphabetical)",
+        // authors: "Celong Liu, Chia-Wen Kuo, Chuang Huang, Dawei Du, Fan Chen, Guang Chen, <strong>Haoji Zhang</strong>, Haojun Zhao, Lingxi Zhang, Lu Guo, Lusha Li, Longyin Wen<sup>&dagger;</sup>, Qihang Fan, Qingyu Chen, Rachel Deng, Sijie Zhu, Stuart Siew, Tong Jin, Weiyan Tao, Wen Zhong, Xiaohui Shen<sup>&dagger;</sup>, Xin Gu, Zhenfang Chen, Zuhua Lin (Alphabetical)",
+        authors: "Chia-Wen Kuo*, Dawei Du*, Fan Chen*, Guang Chen*, <strong>Haoji Zhang*</strong>, Qihang Fan*, Xin Gu*, Zhenfang Chen*, Longyin Wen<sup>&dagger;</sup>, Xiaohui Shen<sup>&dagger;</sup>, et al. (* alphabetical order)",
         venue: "Technical Report",
         year: 2025,
         links: [
             { label: "arXiv", url: "https://arxiv.org/abs/2511.19529" },
             { label: "Code", url: "https://github.com/bytedance/vidi" },
+            { label: "Model", url: "https://huggingface.co/bytedance-research/Vidi-7B" },
             { label: "Project Page", url: "https://bytedance.github.io/vidi-website/" },
         ],
         description: "Vidi2 delivers fine-grained spatio‑temporal grounding and improved temporal retrieval for long videos, with new benchmarks showing strong performance versus leading proprietary models.",

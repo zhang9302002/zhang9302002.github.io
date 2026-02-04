@@ -1,5 +1,22 @@
 const publications = [
     {
+        image: "images/vidi2_5.png",
+        title: "Vidi2.5: Large Multimodal Models for Video Understanding and Creation",
+        // authors: "Celong Liu, Chia-Wen Kuo, Chuang Huang, Dawei Du, Fan Chen, Guang Chen, <strong>Haoji Zhang</strong>, Haojun Zhao, Lingxi Zhang, Lu Guo, Lusha Li, Longyin Wen<sup>&dagger;</sup>, Qihang Fan, Qingyu Chen, Rachel Deng, Sijie Zhu, Stuart Siew, Tong Jin, Weiyan Tao, Wen Zhong, Xiaohui Shen<sup>&dagger;</sup>, Xin Gu, Zhenfang Chen, Zuhua Lin (Alphabetical)",
+        authors: "<strong>Haoji Zhang*</strong>, Chia-Wen Kuo*, Dawei Du*, Fan Chen*, Guang Chen*, Sijie Zhu*, Xin Gu*, Zhenfang Chen*, Longyin Wen<sup>&dagger;</sup>, Xiaohui Shen<sup>&dagger;</sup>, et al.",
+        venue: "Technical Report",
+        year: 2025,
+        links: [
+            { label: "arXiv", url: "https://arxiv.org/abs/2511.19529" },
+            { label: "Code", url: "https://github.com/bytedance/vidi" },
+            { label: "Model", url: "https://huggingface.co/bytedance-research/Vidi1.5-9B" },
+            { label: "Project Page", url: "https://bytedance.github.io/vidi-website/" },
+        ],
+        description: "Vidi2 delivers fine-grained spatio‑temporal grounding and improved temporal retrieval for long videos, with new benchmarks showing strong performance versus leading proprietary models.",
+        selected: true,
+        topics: ["Long Video Understanding"]
+    },
+    {
         image: "images/vital.png",
         title: "Thinking With Videos: Multimodal Tool-Augmented Reinforcement Learning for Long Video Reasoning",
         authors: "<strong>Haoji Zhang*</strong>, Xin Gu*, Jiawen Li, Chixiang Ma, Sule Bai, Chubin Zhang, Bowen Zhang, Zhichao Zhou, Dongliang He, Yansong Tang<sup>&dagger;</sup>",
@@ -27,23 +44,6 @@ const publications = [
         description: "We developed STVG-o1, a new method that enables off-the-shelf multimodal large language models to achieve state-of-the-art video grounding performance by using a \"bounding-box chain-of-thought\" and reinforcement learning.",
         selected: true,
         topics: ["Multimodal Reasoning", "Agentic Model"]
-    },
-    {
-        image: "images/vidi2_5.png",
-        title: "Vidi2.5: Large Multimodal Models for Video Understanding and Creation",
-        // authors: "Celong Liu, Chia-Wen Kuo, Chuang Huang, Dawei Du, Fan Chen, Guang Chen, <strong>Haoji Zhang</strong>, Haojun Zhao, Lingxi Zhang, Lu Guo, Lusha Li, Longyin Wen<sup>&dagger;</sup>, Qihang Fan, Qingyu Chen, Rachel Deng, Sijie Zhu, Stuart Siew, Tong Jin, Weiyan Tao, Wen Zhong, Xiaohui Shen<sup>&dagger;</sup>, Xin Gu, Zhenfang Chen, Zuhua Lin (Alphabetical)",
-        authors: "<strong>Haoji Zhang*</strong>, Chia-Wen Kuo*, Dawei Du*, Fan Chen*, Guang Chen*, Sijie Zhu*, Xin Gu*, Zhenfang Chen*, Longyin Wen<sup>&dagger;</sup>, Xiaohui Shen<sup>&dagger;</sup>, et al.",
-        venue: "Technical Report",
-        year: 2025,
-        links: [
-            { label: "arXiv", url: "https://arxiv.org/abs/2511.19529" },
-            { label: "Code", url: "https://github.com/bytedance/vidi" },
-            { label: "Model", url: "https://huggingface.co/bytedance-research/Vidi1.5-9B" },
-            { label: "Project Page", url: "https://bytedance.github.io/vidi-website/" },
-        ],
-        description: "Vidi2 delivers fine-grained spatio‑temporal grounding and improved temporal retrieval for long videos, with new benchmarks showing strong performance versus leading proprietary models.",
-        selected: true,
-        topics: ["Long Video Understanding"]
     },
     {
         image: "images/flash.jpg",

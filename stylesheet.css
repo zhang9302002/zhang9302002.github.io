@@ -320,27 +320,56 @@ h3[id^="topic-"],
   position: relative;
   border-bottom: 1px dotted #999;
 }
+.hint-img{
+  position: relative;   /* tooltip 定位锚点 */
+  border: none;         /* 明确不要虚线 */
+  cursor: default;
+}
 /* tooltip 本体 */
-.hint::after {
+.hint::after,
+.hint-img::after
+{
   content: attr(data-tip);
   position: absolute;
-  bottom: 125%;
   left: 50%;
+  bottom: calc(-30px);
   transform: translateX(-50%);
-  background: #333;
+  background: rgba(34,34,34,0.95);
   color: #fff;
-  padding: 3px 7px;
-  border-radius: 4px;
+  padding: 5px 9px;
+  border-radius: 5px;
   font-size: 12px;
   white-space: nowrap;
-
   opacity: 0;
   pointer-events: none;
-
-  /* 关键：无延迟 */
-  transition: opacity 0.1s ease;
+  z-index: 9999;
 }
 /* hover 即刻显示 */
-.hint:hover::after {
+.hint:hover::after,
+.hint:hover::before,
+.hint-img:hover::after,
+.hint-img:hover::before 
+{
   opacity: 1;
+}
+
+/* ===== 图片卡片 ===== */
+.photo-wrap{
+  display: inline-block;
+  position: relative;            /* tooltip 定位锚点 */
+  border-radius: 12px;
+  overflow: visible;
+  border: 1px solid rgba(0,0,0,0.08);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.photo-wrap img{
+  width: 100%;
+  max-width: 100%;
+  display: block;
+}
+/* ===== hover 提升（可选） ===== */
+.photo-wrap:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.18);
 }

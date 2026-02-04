@@ -139,7 +139,7 @@ span.highlight {
 }
 
 li {
-  margin: 5px;
+  margin: 5px 5px 5px 15px;
 }
 
 /* for selection by year / topic */
@@ -313,4 +313,34 @@ h3[id^="topic-"],
   font-size: 18px;
   /* font-weight: bold; */
   border-bottom: 1px solid #eee;
+}
+
+/* 悬停注释 */
+.hint {
+  position: relative;
+  border-bottom: 1px dotted #999;
+}
+/* tooltip 本体 */
+.hint::after {
+  content: attr(data-tip);
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #333;
+  color: #fff;
+  padding: 3px 7px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+
+  opacity: 0;
+  pointer-events: none;
+
+  /* 关键：无延迟 */
+  transition: opacity 0.1s ease;
+}
+/* hover 即刻显示 */
+.hint:hover::after {
+  opacity: 1;
 }

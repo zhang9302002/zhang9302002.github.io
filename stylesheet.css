@@ -145,7 +145,7 @@ li {
 /* for selection by year / topic */
 .pub-switch-row {
   margin: 10px 0;
-  font-size: 17px;
+  /* font-size: 17px; */
 }
 
 .pub-switch {

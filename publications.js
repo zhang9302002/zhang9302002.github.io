@@ -20,8 +20,8 @@ const publications = [
         image: "images/vital.png",
         title: "Thinking With Videos: Multimodal Tool-Augmented Reinforcement Learning for Long Video Reasoning",
         authors: "<strong>Haoji Zhang*</strong>, Xin Gu*, Jiawen Li, Chixiang Ma, Sule Bai, Chubin Zhang, Bowen Zhang, Zhichao Zhou, Dongliang He, Yansong Tang<sup>&dagger;</sup>",
-        venue: "Preprint",
-        year: 2025,
+        venue: "IEEE/CVF Computer Vision and Pattern Recognition Conference (<strong style=\"color:red\">CVPR</strong>)",
+        year: 2026,
         links: [
             { label: "arXiv", url: "https://arxiv.org/abs/2508.04416" },
             { label: "Code", url: "https://github.com/zhang9302002/ThinkingWithVideos" },

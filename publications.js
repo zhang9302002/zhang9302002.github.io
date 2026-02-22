@@ -28,7 +28,7 @@ const publications = [
             { label: "Data", url: "https://huggingface.co/datasets/zhang9302002/MultiTaskVideoReasoning" },
             { label: "Project Page", url: "https://zhang9302002.github.io/thinkingwithvideos-page/" },
         ],
-        description: "We propose Flash-VStream, an efficient VLM with a novel memory mechanism that enables real-time understanding and querying of extremely long video streams.",
+        description: "",
         selected: true,
         topics: ["Multimodal Reasoning", "Agentic Model", "Long Video Understanding"]
     },
@@ -110,7 +110,7 @@ const publications = [
     {
         image: "images/scclip.png",
         title: "Self-Calibrated CLIP for Training-Free Open-Vocabulary Segmentation",
-        authors: "Sule Bai*, Yong Liu*, Yifei Han, <strong>Haoji Zhang</strong>, Yansong Tang<sup>&dagger;</sup>",
+        authors: "Sule Bai*, Yong Liu*, Yifei Han, <strong>Haoji Zhang</strong>, Yansong Tang<sup>&dagger;</sup>, Jie Zhou, Jiwen Lu",
         venue: "IEEE Transactions on Image Processing (<strong style=\"color:red\">TIP</strong>)",
         year: 2025,
         links: [

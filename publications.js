@@ -1,5 +1,21 @@
 const publications = [
     {
+        image: "images/vital.png",
+        title: "Thinking With Videos: Multimodal Tool-Augmented Reinforcement Learning for Long Video Reasoning",
+        authors: "<strong>Haoji Zhang*</strong>, Xin Gu*, Jiawen Li, Chixiang Ma, Sule Bai, Chubin Zhang, Bowen Zhang, Zhichao Zhou, Dongliang He, Yansong Tang<sup>&dagger;</sup>",
+        venue: "IEEE/CVF Computer Vision and Pattern Recognition Conference (<strong style=\"color:red\">CVPR</strong>)",
+        year: 2026,
+        links: [
+            { label: "arXiv", url: "https://arxiv.org/abs/2508.04416" },
+            { label: "Code", url: "https://github.com/zhang9302002/ThinkingWithVideos" },
+            { label: "Data", url: "https://huggingface.co/datasets/zhang9302002/MultiTaskVideoReasoning" },
+            { label: "Project Page", url: "https://zhang9302002.github.io/thinkingwithvideos-page/" },
+        ],
+        description: "",
+        selected: true,
+        topics: ["Multimodal Reasoning", "Agentic Model", "Long Video Understanding"]
+    },
+    {
         image: "images/vidi2_5.png",
         title: "Vidi2.5: Large Multimodal Models for Video Understanding and Creation",
         // authors: "Celong Liu, Chia-Wen Kuo, Chuang Huang, Dawei Du, Fan Chen, Guang Chen, <strong>Haoji Zhang</strong>, Haojun Zhao, Lingxi Zhang, Lu Guo, Lusha Li, Longyin Wen<sup>&dagger;</sup>, Qihang Fan, Qingyu Chen, Rachel Deng, Sijie Zhu, Stuart Siew, Tong Jin, Weiyan Tao, Wen Zhong, Xiaohui Shen<sup>&dagger;</sup>, Xin Gu, Zhenfang Chen, Zuhua Lin (Alphabetical)",
@@ -15,22 +31,6 @@ const publications = [
         description: "Vidi2 delivers fine-grained spatio‑temporal grounding and improved temporal retrieval for long videos, with new benchmarks showing strong performance versus leading proprietary models.",
         selected: true,
         topics: ["Long Video Understanding"]
-    },
-    {
-        image: "images/vital.png",
-        title: "Thinking With Videos: Multimodal Tool-Augmented Reinforcement Learning for Long Video Reasoning",
-        authors: "<strong>Haoji Zhang*</strong>, Xin Gu*, Jiawen Li, Chixiang Ma, Sule Bai, Chubin Zhang, Bowen Zhang, Zhichao Zhou, Dongliang He, Yansong Tang<sup>&dagger;</sup>",
-        venue: "IEEE/CVF Computer Vision and Pattern Recognition Conference (<strong style=\"color:red\">CVPR</strong>)",
-        year: 2026,
-        links: [
-            { label: "arXiv", url: "https://arxiv.org/abs/2508.04416" },
-            { label: "Code", url: "https://github.com/zhang9302002/ThinkingWithVideos" },
-            { label: "Data", url: "https://huggingface.co/datasets/zhang9302002/MultiTaskVideoReasoning" },
-            { label: "Project Page", url: "https://zhang9302002.github.io/thinkingwithvideos-page/" },
-        ],
-        description: "",
-        selected: true,
-        topics: ["Multimodal Reasoning", "Agentic Model", "Long Video Understanding"]
     },
     {
         image: "images/stvgo1.png",

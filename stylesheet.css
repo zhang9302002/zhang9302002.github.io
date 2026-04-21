@@ -420,6 +420,34 @@ html {
   scroll-behavior: smooth;
 }
 
+/* ===== 移动端兜底：防止横向溢出导致 iOS Safari 自动缩放 ===== */
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+/* 图片默认不超过容器宽度，自动按比例缩放 */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 表格不允许撑出容器 */
+table {
+  max-width: 100%;
+}
+
+/* 长 URL / 单词在窄屏下允许换行，避免撑破布局 */
+.publication-authors,
+.cv-detail,
+.cv-summary,
+p,
+li {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
 #home,
 #group,
 #teaching,

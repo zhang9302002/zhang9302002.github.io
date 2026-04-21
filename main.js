@@ -84,9 +84,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 <td class="pub-text-cell">
                     <div class="publication-title">${pub.title}</div>
                     <div class="publication-authors">${pub.authors}</div>
-                    <div class="publication-venue">${pub.venue}, ${pub.year}</div>
-                    <div class="publication-links">
-                        ${pub.links ? pub.links.map(link => `<a href="${link.url}">[${link.label}]</a>`).join(' ') : ''}
+                    <div class="publication-meta">
+                        <span class="publication-venue${pub.highlighted ? ' highlighted' : ''}">${pub.shortVenue || pub.venue + ', ' + pub.year}</span>
+                        ${pub.links && pub.links.length ? `<span class="meta-sep">·</span>
+                        <span class="publication-links">${pub.links.map(link => `<a href="${link.url}">[${link.label}]</a>`).join(' ')}</span>` : ''}
                     </div>
                     ${pub.badge ? `<span class="pub-badge">${pub.badge}</span>` : ''}
                 </td>

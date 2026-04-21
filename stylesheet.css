@@ -70,6 +70,15 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+:root {
+  /* --accent-color: #d35400; */
+  --accent-color: #c0392b;
+}
+
+.accent {
+  color: var(--accent-color);
+}
+
 a {
   color: #1772d0;
   text-decoration: none;
@@ -142,6 +151,16 @@ li {
   margin: 5px 5px 5px 15px;
 }
 
+/* 普通 ul（News / Honors / Services / Contact 等）顶格显示，不要默认缩进 */
+ul:not(.cv-list) {
+  padding-left: 1.2em;
+  margin: 8px 0;
+}
+
+ul:not(.cv-list) > li {
+  margin: 5px 0;
+}
+
 /* for selection by year / topic */
 .pub-switch-row {
   margin: 10px 0;
@@ -170,7 +189,7 @@ li {
 }
 
 .pub-badge {
-  color: red;
+  color: var(--accent-color);
   font-weight: bold;
   margin-bottom: 2px;
   display: block;
@@ -181,20 +200,40 @@ li {
   border: none;
   border-spacing: 0;
   margin-bottom: 15px;
+  border-radius: 8px;
+  transition: background 0.15s ease, box-shadow 0.2s ease;
+}
+
+.publication-table:hover {
+  background: #fafafa;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
 }
 
 .pub-img-cell {
-  width: 30%;
+  width: 160px;
+  min-width: 160px;
   vertical-align: center;
   text-align: center;
-  padding-right: 20px;
+  padding-right: 18px;
 }
 
 .pub-img {
   max-width: 100%;
-  max-height: 120px;
+  max-height: 110px;
   /* border-radius: 6px; */
   /* 可根据图片风格微调 */
+}
+
+/* 窄屏：图片列再缩一点，避免挤占文字 */
+@media (max-width: 600px) {
+  .pub-img-cell {
+    width: 110px;
+    min-width: 110px;
+    padding-right: 12px;
+  }
+  .pub-img {
+    max-height: 90px;
+  }
 }
 
 .pub-text-cell {
@@ -215,16 +254,32 @@ li {
   margin-bottom: 2px;
 }
 
-.publication-venue {
-  /* font-size: 13px; */
-  color: #777;
-  font-style: italic;
+.publication-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px;
   margin-bottom: 2px;
 }
 
+.publication-venue {
+  color: #888;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.publication-venue.highlighted {
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+.meta-sep {
+  color: #bbb;
+}
+
 .publication-links a {
-  /* font-size: 13px; */
   color: #1772d0;
+  margin-right: 2px;
 }
 
 
@@ -234,15 +289,18 @@ li {
   left: 0;
   width: 100%;
   height: 56px;
-  background: linear-gradient(0deg, #1a237e 0%, #4b5ac0 100%);
+  /* background: linear-gradient(0deg, #1a237e 0%, #4b5ac0 100%);
   color: #fff;
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px); */
+  background: #1e3a5f;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
   z-index: 999;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
 }
 
 .container {
-  max-width: 810px;
+  max-width: 850px;
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -278,6 +336,46 @@ li {
   text-decoration: underline;
 }
 
+/* 中等屏：缩小间距和字号 */
+@media (max-width: 768px) {
+  .navbar-left {
+    font-size: 16px;
+  }
+  .navbar-right a {
+    margin-left: 18px;
+    font-size: 14px;
+  }
+}
+
+/* 极窄屏（手机）：链接区横向可滚动，避免溢出/换行 */
+@media (max-width: 560px) {
+  .container {
+    padding: 0 10px;
+  }
+  .navbar-left {
+    font-size: 15px;
+    flex-shrink: 0;
+  }
+  .navbar-right {
+    flex: 1;
+    min-width: 0;
+    margin-left: 8px;
+    overflow-x: auto;
+    white-space: nowrap;
+    text-align: right;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .navbar-right::-webkit-scrollbar {
+    display: none;
+  }
+  .navbar-right a {
+    margin-left: 14px;
+    font-size: 13px;
+  }
+}
+
 body {
   /* 顶部留出导航栏高度 */
   padding-top: 56px;
@@ -292,6 +390,8 @@ html {
 #teaching,
 #talks,
 #news,
+#education,
+#experience,
 #datasets,
 #honors,
 #contact,
@@ -300,6 +400,111 @@ h3[id^="topic-"],
 #publications-anchor,
 #publications-list {
   scroll-margin-top: 50px;
+}
+
+/* ===== Education / Industrial Experience ===== */
+.cv-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cv-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 8px;
+  margin: 0 -8px;
+  border-bottom: 1px solid #f0f0f0;
+  border-radius: 6px;
+  /* transition: background 0.15s ease; */
+}
+
+.cv-item:last-child {
+  border-bottom: none;
+}
+
+.cv-item:hover {
+  background: #fafafa;
+}
+
+.cv-item a {
+  font-size: 13px;
+}
+
+.cv-logo {
+  flex: 0 0 160px;
+  width: 100px;
+  height: 70px;
+  margin-right: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.cv-logo img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.cv-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.cv-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.cv-institution {
+  font-weight: 700;
+  color: #111;
+  font-size: 15px;
+}
+
+.cv-date {
+  color: #777;
+  font-size: 13px;
+  font-style: italic;
+  white-space: nowrap;
+}
+
+.cv-role {
+  color: #777;
+  font-size: 13px;
+  margin-top: 3px;
+}
+
+.cv-detail {
+  color: #777;
+  font-size: 13px;
+  margin-top: 2px;
+}
+
+.cv-summary {
+  color: #777;
+  font-size: 13px;
+  margin-top: 2px;
+}
+
+/* 窄屏自适应：时间换到第二行 */
+@media (max-width: 600px) {
+  .cv-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+  }
+  .cv-logo {
+    flex: 0 0 56px;
+    width: 56px;
+    height: 56px;
+    margin-right: 12px;
+  }
 }
 
 .pub-sticky-header {
@@ -361,7 +566,7 @@ h3[id^="topic-"],
   overflow: visible;
   border: 1px solid rgba(0,0,0,0.08);
   box-shadow: 0 10px 30px rgba(0,0,0,0.12);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .photo-wrap img{
   width: 100%;

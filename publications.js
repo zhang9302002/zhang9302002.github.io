@@ -92,6 +92,21 @@ const publications = [
         selected: true,
         topics: ["Efficient Deep Learning"]
     },
+
+
+    {
+        image: "images/chatumm.png",
+        title: "ChatUMM: Robust Context Tracking for Conversational Interleaved Generation",
+        authors: "Wenxun Dai, Zhiyuan Zhao, Yule Zhong, Yiji Cheng, Jianwei Zhang, Linqing Wang, Shiyi Zhang, Yunlong Lin, Runze He, Fellix Song, Wayne Zhuang, Yong Liu, <strong>Haoji Zhang</strong>, Yansong Tang<sup>&dagger;</sup>, Qinglin Lu, Chunyu Wang",
+        venue: "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (<strong style=\"color:red\">CVPRW</strong>)",
+        year: 2026,
+        links: [
+            { label: "arXiv", url: "https://arxiv.org/abs/2602.06442" }
+        ],
+        description: "We present ChatUMM, a conversational unified model which excels at robust context tracking to sustain interleaved multimodal generation.",
+        selected: true,
+        topics: ["Unified Multimodal Models"]
+    },
     {
         image: "images/univg.jpg",
         title: "UniVG-R1: Reasoning Guided Universal Visual Grounding with Reinforcement Learning",

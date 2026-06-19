@@ -70,6 +70,22 @@ const publications = [
         topics: ["Long Video Understanding", "Efficient Deep Learning"]
     },
     {
+        image: "images/ddavs.png",
+        title: "DDAVS: Disentangled Audio Semantics and Delayed Bidirectional Alignment for Audio-Visual Segmentation",
+        authors: "Jingqi Tian*, Yiheng Du*, <strong>Haoji Zhang*</strong>, Yuji Wang, Isaac Ning Lee, Xulong Bai, Tianrui Zhu, Jingxuan Niu, Yansong Tang<sup>&dagger;</sup>",
+        venue: "European Conference on Computer Vision (<strong class=\"accent\">ECCV</strong>)",
+        shortVenue: "ECCV 2026",
+        highlighted: true,
+        year: 2025,
+        links: [
+            { label: "arXiv", url: "https://arxiv.org/abs/2512.20117" },
+            { label: "Project Page", url: "https://trilarflagz.github.io/DDAVS-page/" }
+        ],
+        description: "",
+        selected: true,
+        topics: ["Long Video Understanding"]
+    },
+    {
         image: "images/ponder.png",
         title: "Ponder & Press: Advancing Visual GUI Agent towards General Computer Control",
         authors: "Yiqin Wang*, <strong>Haoji Zhang*</strong>, Jingqi Tian, Yansong Tang<sup>&dagger;</sup>",

@@ -37,21 +37,6 @@ const publications = [
         topics: ["Long Video Understanding"]
     },
     {
-        image: "images/stvgo1.png",
-        title: "Thinking With Bounding Boxes: Enhancing Spatio-Temporal Video Grounding via Reinforcement Fine-Tuning",
-        authors: "Xin Gu*, <strong>Haoji Zhang*</strong>, Qihang Fan, Jingxuan Niu, Zhipeng Zhang, Libo Zhang, Guang Chen, Fan Chen, Longyin Wen, Sijie Zhu<sup>&dagger;</sup>",
-        venue: "Preprint",
-        shortVenue: "Preprint 2025",
-        highlighted: false,
-        year: 2025,
-        links: [
-            { label: "arXiv", url: "https://arxiv.org/abs/2511.21375" },
-        ],
-        description: "We developed STVG-o1, a new method that enables off-the-shelf multimodal large language models to achieve state-of-the-art video grounding performance by using a \"bounding-box chain-of-thought\" and reinforcement learning.",
-        selected: true,
-        topics: ["Multimodal Reasoning", "Agentic Model"]
-    },
-    {
         image: "images/flash.jpg",
         title: "Flash-VStream: Efficient Real-Time Understanding for Long Video Streams",
         authors: "<strong>Haoji Zhang*</strong>, Yiqin Wang*, Yansong Tang<sup>&dagger;</sup>, Yong Liu, Jiashi Feng, Xiaojie Jin<sup>&dagger;</sup>",
@@ -68,6 +53,21 @@ const publications = [
         description: "We propose Flash-VStream, an efficient VLM with a novel memory mechanism that enables real-time understanding and querying of extremely long video streams.",
         selected: true,
         topics: ["Long Video Understanding", "Efficient Deep Learning"]
+    },
+    {
+        image: "images/stvgo1.png",
+        title: "Thinking With Bounding Boxes: Enhancing Spatio-Temporal Video Grounding via Reinforcement Fine-Tuning",
+        authors: "Xin Gu*, <strong>Haoji Zhang*</strong>, Qihang Fan, Jingxuan Niu, Zhipeng Zhang, Libo Zhang, Guang Chen, Fan Chen, Longyin Wen, Sijie Zhu<sup>&dagger;</sup>",
+        venue: "Preprint",
+        shortVenue: "Preprint 2025",
+        highlighted: false,
+        year: 2025,
+        links: [
+            { label: "arXiv", url: "https://arxiv.org/abs/2511.21375" },
+        ],
+        description: "We developed STVG-o1, a new method that enables off-the-shelf multimodal large language models to achieve state-of-the-art video grounding performance by using a \"bounding-box chain-of-thought\" and reinforcement learning.",
+        selected: true,
+        topics: ["Multimodal Reasoning", "Agentic Model"]
     },
     {
         image: "images/ddavs.png",

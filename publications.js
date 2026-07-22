@@ -9,6 +9,7 @@ const publications = [
         year: 2026,
         links: [
             { label: "arXiv", url: "https://arxiv.org/abs/2508.04416" },
+            { label: "Paper", url: "https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_Thinking_With_Videos_Multimodal_Tool-Augmented_Reinforcement_Learning_for_Long_Video_CVPR_2026_paper.html" },
             { label: "Code", url: "https://github.com/zhang9302002/ThinkingWithVideos" },
             { label: "Data", url: "https://huggingface.co/datasets/zhang9302002/MultiTaskVideoReasoning" },
             { label: "Project Page", url: "https://zhang9302002.github.io/thinkingwithvideos-page/" },
